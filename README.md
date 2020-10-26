@@ -39,4 +39,4 @@
 
 ## 參考 Reference
 
-[Screenshot.png]:https://raw.githubusercontent.com/Loukei/portfolio/master/Notepad/DemoImage/Screenshot.png
+[Screenshot.png]:https://github.com/Loukei/Qt-Notepad/blob/main/DemoImage/Screenshot.png?raw=true
