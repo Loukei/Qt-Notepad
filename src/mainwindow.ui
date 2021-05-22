@@ -33,7 +33,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>25</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -80,7 +80,6 @@
     <addaction name="action_Save_As"/>
     <addaction name="menu_Reopen_encoding"/>
     <addaction name="menu_Save_with_Encoding"/>
-    <addaction name="action_Save_All"/>
     <addaction name="action_Exit"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
@@ -99,23 +98,15 @@
     <addaction name="separator"/>
     <addaction name="action_FindOrReplace"/>
    </widget>
-   <widget class="QMenu" name="menuHelp">
-    <property name="title">
-     <string>&amp;Help</string>
-    </property>
-    <addaction name="action_About"/>
-   </widget>
    <widget class="QMenu" name="menuOption">
     <property name="title">
      <string>&amp;Option</string>
     </property>
-    <addaction name="action_Settings"/>
     <addaction name="action_Font"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
    <addaction name="menuOption"/>
-   <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">

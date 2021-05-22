@@ -206,9 +206,8 @@ void MainWindow::initialTabWidget()
     connect(tabwidget,&TabWidget::currentChanged,
             this,&MainWindow::on_TabWidget_currentChanged);
 
-    //! tabwidget 已經建立，但一開始我們先開一個空白分頁
-    on_newFile();
-    resetMainWindowTitle(QStringLiteral(""));
+    on_newFile(); //create an empty tab first
+    resetMainWindowTitle(QLatin1String(""));
 }
 
 void MainWindow::initailSearchWidget()
@@ -365,7 +364,6 @@ TextEditor* MainWindow::createEditor(QWidget *parent)
     connect(editor,&TextEditor::copyAvailable,ui->action_Delete,&QAction::setEnabled);
 #endif
     editor->setAcceptDrops(false); //set edit not accept drop event
-//    setEditorStyleSheet(editor);  //不明原因無法設定QSS
     setEditorPalette(editor);
     return editor;
 }
@@ -696,7 +694,6 @@ void MainWindow::dragEnterEvent(QDragEnterEvent *event)
     //! brief: this call by mouse drag enter mainwindow
     //! check if files is text,then accept
     qDebug("MainWindow::dragEnterEvent()");
-    //event->mimeData()->hasFormat("text/uri-list") //! 測試mimeData是否為文字型別
     const QString &fpath = event->mimeData()->urls().first().toLocalFile();
     if(QFileInfo(fpath).suffix() == QStringLiteral("txt"))
         event->acceptProposedAction();

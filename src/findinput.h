@@ -12,15 +12,19 @@ public:
     explicit FindInput(const QString &contents,QWidget *parent = nullptr);
     ~FindInput() = default;
 
-    //! 回傳對應的按鈕是否按下
+    //! Return Case Sensitivity button has pressed
     bool isCaseSensitively();
+    //! Return WholeWords button has pressed
     bool isWholeWords();
+    //! Return RegularExpression button has pressed
     bool isRegularExpression();
 
 signals:
-    //! 按鈕按下的信號
+    //! Emit Single when CaseSensitively Button pressed
     void CaseSensitivelyClicked(bool pressed);
+    //! Emit Single when WholeWords Button pressed
     void WholeWordsClicked(bool pressed);
+    //! Emit Single when RegularExpression Button pressed
     void RegularExpressionClicked(bool pressed);
 
 private:

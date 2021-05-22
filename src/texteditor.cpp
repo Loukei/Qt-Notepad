@@ -56,44 +56,6 @@ bool TextEditor::saveFile(const QString &fname, QTextCodec *codec)
     }
 }
 
-//void TextEditor::openFile(const QString &dir)
-//{
-//    const QString fname = QFileDialog::getOpenFileName(this,
-//                                                       tr("Open File"), /*title*/
-//                                                       dir, /*working directory*/
-//                                                       tr("Text files (*.txt)") /*file fliter*/);
-//    if(!fname.isEmpty())
-//    {
-//        load(fname);
-//        this->setWindowFilePath(fname);
-//        this->document()->setModified(false);
-//    }
-//}
-
-//void TextEditor::saveFile(const QString &dir)
-//{
-//    if(isUnTitled())
-//    {
-//        return saveAsFile(dir);
-//    }
-//    save(this->windowFilePath());
-//    this->document()->setModified(false);
-//}
-
-//void TextEditor::saveAsFile(const QString &dir)
-//{
-//    const QString fname = QFileDialog::getSaveFileName(this,
-//                                                       tr("Save As File"),
-//                                                       dir,
-//                                                       tr("Text files (*.txt)"));
-//    if(!fname.isEmpty())
-//    {
-//        save(fname);
-//        this->setWindowFilePath(fname);
-//        this->document()->setModified(false);
-//    }
-//}
-
 bool TextEditor::load(const QString &fname)
 {
     QFile file(fname);

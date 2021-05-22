@@ -26,7 +26,6 @@ FindInput::FindInput(const QString &contents, QWidget *parent):
     addButtons();
 }
 
-//! 回傳對應的按鈕是否按下 >>
 bool FindInput::isCaseSensitively()
 {
     if(button_CaseSensitively)
@@ -50,7 +49,6 @@ bool FindInput::isRegularExpression()
     else
         return false;
 }
-//! << 回傳對應的按鈕是否按下
 
 void FindInput::createIconButtons()
 {
