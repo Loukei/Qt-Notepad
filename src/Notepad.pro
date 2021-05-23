@@ -50,3 +50,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     notepad.qrc
+
+# add windows desktop icon
+RC_ICONS = Images/notepad-icon.ico
