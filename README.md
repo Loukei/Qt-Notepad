@@ -19,18 +19,6 @@
 9. Encoding: 針對不同編碼文件可以選擇"Reopen with Encoding"
 10. Find & Replace: 搜尋 & 取代
 
-## 施工中
-
-- 雲端同步檔案
-- 側邊欄檔案總管
-- 行數顯示
-- 自訂UI外觀(QSS stylesheet)
-- 拖曳分頁開啟新視窗
-- tabWidget功能(新增分頁鈕、平均分配分頁大小)
-- language highlight: 支援.cpp,.java,.md等語法高亮
-- UI多國語言翻譯
-- terminal
-
 ## 編譯環境
 
 - C++ 11
